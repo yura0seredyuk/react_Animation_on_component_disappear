@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(44, 9, 71);
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+div {
+  will-change: transform;
+  border-radius: 25%;
+}
+
+button {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  top: 80%;
+  left: 50%;
+  font-size: 0.8rem;
+  transform: translate(-50%, 20%);
+  background-color: rgb(255, 0, 106);
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(253, 87, 156);
+}
+
+.bg-square {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.fade-out {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
